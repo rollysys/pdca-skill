@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Example sandbox local runtime state (users who cp -r the sandbox will
+# generate these locally; they're per-user and should not be committed)
+examples/sandbox/.pdca/

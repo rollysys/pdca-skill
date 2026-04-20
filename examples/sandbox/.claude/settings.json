@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/skills/pdca/hooks/pre_tool_use.py"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/skills/pdca/hooks/session_start.py"
+          }
+        ]
+      }
+    ]
+  }
+}
