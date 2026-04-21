@@ -20,7 +20,12 @@ plan_slug: short-kebab-case-id
 - [ ] step 2
 - [ ] step 3
 
+## 验收记录
+
+- command: <命令>
+- result: <关键输出/结论>
+
 ## 说明
 
 把 `status: draft` 改成 `status: active` 后才会放行 Edit/Write。
-做完后敲 `/pdca-done` 触发独立 review。
+做完前先把步骤都勾完,并补上 `## 验收记录`; `/pdca-done` 会校验这两项。
